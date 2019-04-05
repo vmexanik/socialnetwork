@@ -1,10 +1,10 @@
 <?php 
 //подключение БД
 
-$host='localhost';
-$user='mysql';
-$pass='mysql';
+$host='';
+$user='';
+$pass='';
 	
-$DBname='auth';
+$DBname='';
 
 $link=mysqli_connect($host, $user, $pass, $DBname);
