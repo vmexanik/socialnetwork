@@ -1,5 +1,7 @@
 <?php
 
+require_once('classes/Form.php');
+
 function showFormEdit ($id, $data) //показывает форму изменения даты и почты в личном кабинете
 {
 	$birthday=$data['birthday'];
@@ -8,14 +10,19 @@ function showFormEdit ($id, $data) //показывает форму измен�
 	$messageEmail=$_SESSION['register_message']['email'];
 	$messageDate=$_SESSION['register_message']['date'];
 	
-	return '<form method="POST">
-		Дата рождения:<br>
-		<input type="date" name="birthday" value="'.$data['birthday'].'" min="1970-01-01" max="2136-01-01">'.$messageDate.'<p>
-		E-mail:<br>
-		<input type="text" name="email" value="'.$data['email'].'">'.$messageEmail.'<p>
-		<input type="submit" name="Редактировать"><p>
-		</form>';
-	
+	$str='';	
+	$form= new Form;
+	$str.=$form->open(['method'=>'POST']);
+	$str.='Дата рождения:<br>';
+	$str.=$form->input(['type'=>'date', 'name'=>'birthday', 'value'=>$data['birthday'], 'min'=>'1970-01-01', 'max'=>'2136-01-01']);
+	$str.=$messageDate.'<p>';
+	$str.='E-mail:<br>';
+	$str.=$form->input(['type'=>'text', 'name'=>'email', 'value'=>$data['email']]);
+	$str.=$messageEmail.'<p>';
+	$str.=$form->input(['type'=>'submit', 'name'=>'Редактировать']);
+	$str.='<p>';
+	$str.=$form->close();
+
 	$_SESSION['register_message']['email']=null;
 	$_SESSION['register_message']['date']=null;
 }
@@ -34,26 +41,30 @@ function regFormShow ($flag='SAVE') //показывает регистраци�
 			$button='Изменить';
 	}
 	$timeNow=date('Y-m-d');
-	$res='
-			<form method="POST">
-			Логин<br>
-			<input type="text" name="login" value="'.$_POST['login'].'"> '.$messageLogin.'<p>
-			Пароль<br>
-			<input type="password" name="password" value="'.$_POST['password'].'"> '.$messagePass.'<p>
-			Подтверждение пароля<br>
-			<input type="password" name="confirm" value="'.$_POST['confirm'].'"> '.$messageConfirm.'<p>
-			Дата рождения<br>
-			<input type="date" name="birthday" value="'.$_POST['birthday'].'" min="1970-01-01" max="'.$timeNow.'"> '.$messageDate.'<p>
-			E-mail<br>
-			<input type="text" name="email" value="'.$_POST['email'].'"> '.$messageEmail.'<p>
-			<input type="submit" value="'.$button.'">
-			</form>';
+	
+	$str='';	
+	$form= new Form;
+	$str.=$form->open(['method'=>'POST']);
+	$str.='Логин<br>';
+	$str.=$form->input(['type'=>'text', 'name'=>'login', 'value'=>$_POST['login']]);
+	$str.=$messageLogin.'<p>Пароль<br>';
+	$str.=$form->input(['type'=>'password', 'name'=>'password', 'value'=>$_POST['password']]);
+	$str.=$messagePass.'<p>Подтверждение пароля<br>';
+	$str.=$form->input(['type'=>'password', 'name'=>'confirm', 'value'=>$_POST['confirm']]);
+	$str.=$messageConfirm.'<p>Дата рождения<br>';
+	$str.=$form->input(['type'=>'date', 'name'=>'birthday', 'value'=>$_POST['birthday'], 'min'=>'1970-01-01', 'max'=>$timeNow]);
+	$str.=$messageDate.'<p>E-mail<br>';
+	$str.=$form->input(['type'=>'text', 'name'=>'email', 'value'=>$_POST['email']]);
+	$str.=$messageEmail.'<p>';
+	$str.=$form->input(['type'=>'submit', 'value'=>$button]);
+	$str.=$form->close();
+		
 	$_SESSION['register_message']['login']=null;
 	$_SESSION['register_message']['password']=null;
 	$_SESSION['register_message']['confirm']=null;
 	$_SESSION['register_message']['email']=null;
 	$_SESSION['register_message']['date']=null;
-	return $res;
+	return $str;
 }
 
 function verifyLogin($login, $link, $flag='SAVE') //проверяет логин на корректность
@@ -140,15 +151,19 @@ function verifyEMail ($mail,$link,$flag='SAVE') //проверяет почту 
 }
 
 function showForm () //показывает форму авторизации
-{		
-	return '<form method="POST">
-		<p>
-				Логин<br>
-				<input type="text" name="login"><p>
-				Пароль<br>
-				<input type="password" name="pass"><p>
-				<input type="submit" value="Войти !">
-				</form>';
+{
+	$str='';	
+	$form= new Form;
+	$str.=$form->open(['method'=>'POST']);
+	$str.='Логин<br>';
+	$str.=$form->input(['type'=>'text', 'name'=>'login']);
+	$str.='<p>Пароль<br>';
+	$str.=$form->input(['type'=>'password', 'name'=>'pass']);
+	$str.='<p>';
+	$str.=$form->input(['type'=>'submit', 'value'=>'Войти !']);
+	$str.=$form->close();
+	
+	return $str;
 }
 
 function saveData ($login='', $password='', $birthday='', $email='',$data, $id, $link) //апдейтит данные в БД
@@ -188,22 +203,6 @@ function getID ($id, $link) // достаёт пользователя и выч
 	$data['age']=$age;
 	
 	return $data;
-}
-
-function showFormEditPass ()// вывод формы изменения пароля
-{
-	$messagePass=$_SESSION['register_message']['password'];
-	$messageConfirm=$_SESSION['register_message']['confirm'];
-	return 'Введите новый пароль:<br>
-			<form method="POST">
-			Новый пароль:<br>
-			<input type="text" name="newPassword"> '.$messagePass.'<p>
-			Подтверждение пароля:<br>
-			<input type="text" name="newConfirm"> '.$messageConfirm.'<p>
-			<input type="submit" value="Изменить данные профиля"><br>
-			</form>';
-	$_SESSION['register_message']['password']=null;
-	$_SESSION['register_message']['confirm']=null;
 }
 
 

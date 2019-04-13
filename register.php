@@ -21,7 +21,7 @@ if (!empty($_POST['birthday']))
 			$password=password_hash($password,PASSWORD_DEFAULT);
 				
 			$query="INSERT INTO users SET login='$login', password='$password',
-			birthday='$birthday', email='$mail', register_date='$register_date', status='user'";
+			birthday='$birthday', email='$mail', register_date='$register_date', status='user', banned='0', banDate='0000-00-00'";
 			$result=mysqli_query($link, $query) or exit(mysqli_error($link));
 
 			$content=$_SESSION['message']='Регистрация успешна<p>';

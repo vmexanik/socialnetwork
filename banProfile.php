@@ -17,20 +17,21 @@ if (isset($_POST['banDate']))
 		header ('Location: main.php');
 }
 
+$sidebar='';
+
 if ($_SESSION['auth']==true){ //проверка авториазции
-		echo 'Вы вошли как: '.$_SESSION['user'].'<p>';
-		echo '<a href=logout.php>logout</a><p>';	
-		echo '<a href=main.php>main</a><p>';
+		$header='Вы вошли как: '.$_SESSION['user'].'<p>';
+		$sidebar.='<a href=main.php>Главная</a><br>';
+		$sidebar.='<a href=logout.php>Выйти</a><br>';
 
 if ($_SESSION['status']=='admin')
 {
 	$content=	"ID записи:{$data['id']}<br>
 				Логин:{$data['login']}<br>
 				Дата рождения:{$data['birthday']} ({$data['age']} лет)<br>
-				Эелктронная почта:{$data['email']}<br>";
-	echo $content;
+				Электронная почта:{$data['email']}<br>";
 	
-	echo 'Забанить до:
+	$content.= 'Забанить до:
 	<form method="POST">
 	<input type="date" name="banDate" min="'.date('Y-m-d').'">
 	<input type="submit" value="Забанить">
@@ -40,7 +41,7 @@ if ($_SESSION['status']=='admin')
 
 }
 }else {
-		echo '<a href=auth.php>Пожалуйста, авторизуйтесь</a>';
+		$content= '<a href=auth.php>Пожалуйста, авторизуйтесь</a>';
 		}
 
-
+include 'layout1.php';
