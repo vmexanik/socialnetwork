@@ -17,7 +17,7 @@ if (isset($_POST['banDate']))
 		header ('Location: main.php');
 }
 
-if ($_GET['ban']==0)
+if ( isset($_GET['ban']) and $_GET['ban']==0)
 {
     $query="UPDATE users SET banned='0', banDate='0000-00-00' WHERE id='$id'";
     $result=mysqli_query($link, $query) or exit(mysqli_error($link));
@@ -25,6 +25,7 @@ if ($_GET['ban']==0)
     $_GET['ban']==null;
     header ('Location: main.php');
 }
+
 
 $sidebar='';
 
@@ -44,7 +45,7 @@ if ($_SESSION['auth']==true)
         $content.= 'Забанить до:';
         $form= new Form();
         $content.=$form->open(['method'=>'POST']);
-        $content.=$form->input(['type'=>'date', 'name'=>'banDate', 'min'=>'date("Y-m-d")']);
+        $content.=$form->input(['type'=>'date', 'name'=>'banDate', 'min'=>'date("Y-m-d")', 'value'=>$data['banDate']]);
         $content.=$form->input(['type'=>'submit', 'value'=>'Забанить']);
         $content.='<p>';
         $content.='<a href=banProfile.php?id='.$data['id'].'&ban=0>Разбанить</a>';
