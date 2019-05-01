@@ -2,7 +2,6 @@
 
 class Model
 {
-   // Public $userSoc;
     public $mysqli;
 
     public function __construct()
@@ -31,7 +30,7 @@ class Model
 		// todo
 	}
 
-	public function  ArrayToString ($arr)
+	public function  ArrayToString ()
     {
         $i=0;
         $str='';

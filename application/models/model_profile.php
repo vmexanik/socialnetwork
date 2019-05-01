@@ -7,8 +7,7 @@
  */
 class Model_profile extends Model
 {
-    private $i=0;
-    public $array_users=[];
+     public $array_users=[];
 
     function get_data()
     {
@@ -28,6 +27,7 @@ class Model_profile extends Model
             $sidebar='
             <a href="/">Главная</a><br>
             <a href="?id='.$_SESSION['id'].'">Мой профиль</a><br>
+            <a href="messages">Сообщения</a><br>
             <a href="logout">Выйти</a>
             ';
 

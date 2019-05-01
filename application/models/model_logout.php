@@ -13,7 +13,7 @@ class Model_logout extends Model
         session_start();
         if (isset($_SESSION['auth'])&$_SESSION['auth'])
         {
-            $_SESSION['auth']=null;
+            session_destroy();
             header('Location:/');
         }
     }

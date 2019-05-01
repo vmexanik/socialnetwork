@@ -30,6 +30,7 @@ class Model_main extends Model
             $sidebar='
             <a href="/">Главная</a><br>
             <a href="/?id='.$_SESSION['id'].'">Мой профиль</a><br>
+            <a href="messages">Сообщения</a><br>
             <a href="logout">Выйти</a>
             ';
 
@@ -41,7 +42,8 @@ class Model_main extends Model
         }
         else{
             return ['content'=>'Тестовая заготовка под соцсеть написанная с помощью паттенрна MVC. Tолько для тренировки PHP',
-                'sidebar'=>' <a href=auth>Войти</a><br>
+                'sidebar'=>' <a href="/">Главная</a><br>
+                            <a href=auth>Войти</a><br>
                             <a href=register>Зарегистрироваться</a>',
                 'footer'=>'','header'=>'Добро пожаловать!!!'];
         }

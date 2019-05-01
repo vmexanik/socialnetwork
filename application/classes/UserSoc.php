@@ -25,6 +25,7 @@ class UserSoc
 			Логин:{$this->login}<br>
 			Дата регистрации:{$this->register_date}
 			</a>
+			
 			";
 
         return $str;
@@ -39,7 +40,7 @@ class UserSoc
 			Дата регистрации:{$this->register_date}<br>
 			Дата рождения:{$this->register_date}<br>
 			Статус:{$this->status}<br>
-			</a>
+			<a href=\"messages?id=".$this->id."\"> Отправить сообщение</a>
             ";
 
         return $str;
