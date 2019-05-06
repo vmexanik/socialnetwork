@@ -40,7 +40,7 @@ class UserSoc
 			Дата регистрации:{$this->register_date}<br>
 			Дата рождения:{$this->register_date}<br>
 			Статус:{$this->status}<br>
-			<a href=\"messages?id=".$this->id."\"> Отправить сообщение</a>
+			<button id=\"sendMessage\" value=\"".$this->id."\"> Отправить сообщение</button>
             ";
 
         return $str;

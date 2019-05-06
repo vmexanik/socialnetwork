@@ -20,15 +20,18 @@ class Controller_messages extends Controller
         {
             $this->model->getMessageJson();
         };
-        if ($_POST['action']!='getMessageJson' & !isset($_POST['message']))
+        if ($_POST['action']!='getMessageJson' & !isset($_POST['message']) & $_POST['action']!='newDialog')
         {
             $data=$this->model->get_data();
             $this->view->generate('messagesView.tpl', $data);
         }
-        if (isset($_POST['message'])&!empty($_POST['message']))
+        if (isset($_POST['message'])&!empty($_POST['message'])& $_POST['action']=='setMessageJson')
         {
             $this->model->setMessageJson();
-            $data=$this->model->get_data();
+        }
+        if ($_POST['action']=='newDialog' & isset($_POST['id']))
+        {
+            $data=$this->model->newDialog();
             $this->view->generate('messagesView.tpl', $data);
         }
 

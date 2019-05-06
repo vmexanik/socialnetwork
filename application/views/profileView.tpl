@@ -63,13 +63,16 @@
     </div>
     <div class="content">
 
-                {$content}
+        {$content}
 
     </div>
     <div class="footer">
         {$footer}
-        06.03.2019
-    </div>
+    06.03.2019
+</div>
 </div>
 </body>
+<script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+<script src="./application/js/redirect.js"></script>
+<script src="./application/js/profile.js"></script>
 </html>

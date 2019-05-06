@@ -53,12 +53,15 @@
         }
         td.oponent
         {
+            background: white;
             text-align: right;
         }
         td.user
         {
+            background: #E8E6D1;
             text-align: left;
         }
+
 
     </style>
 </head>
@@ -71,10 +74,7 @@
         {$sidebar}
     </div>
     <div class="content">
-        <table>
-                <button id="btn">refresh</button>
-                <p>{$content}</p>
-        </table>
+        <p>{$content}</p>
     </div>
     <div class="footer">
         {$footer}
@@ -85,5 +85,4 @@
 </body>
 <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
 <script src="./application/js/messages.js"></script>
-<script src="./application/js/formMessage.js"></script>
 </html>

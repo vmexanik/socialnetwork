@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-04-24 13:10:27
+/* Smarty version 3.1.33, created on 2019-05-04 13:54:46
   from 'E:\VM\OSPanel\domains\MVC\application\views\profileView.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5cc03613e83aa4_99008940',
+  'unifunc' => 'content_5ccd6f76b048d1_49379894',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '79fe8f42d0b9faa6a1ac7fe8fc985a42742a5d30' => 
     array (
       0 => 'E:\\VM\\OSPanel\\domains\\MVC\\application\\views\\profileView.tpl',
-      1 => 1556033430,
+      1 => 1556967286,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5cc03613e83aa4_99008940 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5ccd6f76b048d1_49379894 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
@@ -88,16 +88,25 @@ function content_5cc03613e83aa4_99008940 (Smarty_Internal_Template $_smarty_tpl)
     </div>
     <div class="content">
 
-                <?php echo $_smarty_tpl->tpl_vars['content']->value;?>
+        <?php echo $_smarty_tpl->tpl_vars['content']->value;?>
 
 
     </div>
     <div class="footer">
         <?php echo $_smarty_tpl->tpl_vars['footer']->value;?>
 
-        06.03.2019
-    </div>
+    06.03.2019
+</div>
 </div>
 </body>
+<?php echo '<script'; ?>
+ src="https://code.jquery.com/jquery-3.4.0.min.js"><?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+ src="./application/js/redirect.js"><?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+ src="./application/js/profile.js"><?php echo '</script'; ?>
+>
 </html><?php }
 }

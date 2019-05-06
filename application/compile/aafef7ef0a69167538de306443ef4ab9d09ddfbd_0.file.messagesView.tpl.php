@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-05-01 20:38:02
+/* Smarty version 3.1.33, created on 2019-05-06 16:20:42
   from 'E:\VM\OSPanel\domains\MVC\application\views\messagesView.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5cc9d97a9d48a8_74288494',
+  'unifunc' => 'content_5cd034aa255491_73950512',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'aafef7ef0a69167538de306443ef4ab9d09ddfbd' => 
     array (
       0 => 'E:\\VM\\OSPanel\\domains\\MVC\\application\\views\\messagesView.tpl',
-      1 => 1556732279,
+      1 => 1557148809,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5cc9d97a9d48a8_74288494 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5cd034aa255491_73950512 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
 <html>
 <head>
@@ -76,12 +76,15 @@ function content_5cc9d97a9d48a8_74288494 (Smarty_Internal_Template $_smarty_tpl)
         }
         td.oponent
         {
+            background: white;
             text-align: right;
         }
         td.user
         {
+            background: #E8E6D1;
             text-align: left;
         }
+
 
     </style>
 </head>
@@ -96,11 +99,8 @@ function content_5cc9d97a9d48a8_74288494 (Smarty_Internal_Template $_smarty_tpl)
 
     </div>
     <div class="content">
-        <table>
-                <button id="btn">refresh</button>
-                <p><?php echo $_smarty_tpl->tpl_vars['content']->value;?>
+        <p><?php echo $_smarty_tpl->tpl_vars['content']->value;?>
 </p>
-        </table>
     </div>
     <div class="footer">
         <?php echo $_smarty_tpl->tpl_vars['footer']->value;?>
@@ -115,9 +115,6 @@ function content_5cc9d97a9d48a8_74288494 (Smarty_Internal_Template $_smarty_tpl)
 >
 <?php echo '<script'; ?>
  src="./application/js/messages.js"><?php echo '</script'; ?>
->
-<?php echo '<script'; ?>
- src="./application/js/formMessage.js"><?php echo '</script'; ?>
 >
 </html><?php }
 }

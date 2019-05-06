@@ -1,20 +1,29 @@
 $( document ).ready(function() {
 
     var header=$(".header"),
-        table=$("table");
+        table=$("table> tbody:last-child"),
+        form=$("#ajaxForm"),
+        id;
 
 
-    setInterval(load,500);
 
-    $( "button" ).click(function() {
-        console.log('Button click!!');
-        load();
+    form.hide();
+
+    $( table ).on("click", "td",function() {
+        id=this.id;
+        form.show('slow');
+        load(id);
+        setInterval(loadHelp,100);
     });
 
-    function load (){
+    function loadHelp() {
+        load(id);
+    }
+
+    function load (id){
          $.ajax({
             url: "/messages",
-            data: {action: "getMessageJson"},
+            data: {action: "getMessageJson", idDialog:id},
             type: "POST",
             dataType : "json",
             success: function (data)
@@ -35,19 +44,28 @@ $( document ).ready(function() {
                 {
                     if (val[i]['sender']=='user')
                     {
-                        table.append("<tr><td class='user'>" + val[i]['text'] + "</td></tr>")
+                        table.append("<tr><td class='user'>" + val[i]['text'] + "</td></tr>");
                     }
                     if (val[i]['sender']=='oponent')
                     {
-                        table.append("<tr><td class='oponent'>" + val[i]['text'] + "</td></tr>")
+                        table.append("<tr><td class='oponent'>" + val[i]['text'] + "</td></tr>");
                     }
-
                 }
             }
         });
     }
 
-
+     form.submit(function( event ) {
+        event.preventDefault();
+        var msg=$("input:first").val();
+        $.ajax({
+            url: "/messages",
+            dataType: 'json',
+            data: {message: msg, action: "setMessageJson", idDialog:id},
+            type: "POST",
+        })
+        form[0].reset();
+    });
 
 })
 
