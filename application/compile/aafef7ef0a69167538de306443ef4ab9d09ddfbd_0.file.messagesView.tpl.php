@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-05-06 16:20:42
+/* Smarty version 3.1.33, created on 2019-05-08 17:26:04
   from 'E:\VM\OSPanel\domains\MVC\application\views\messagesView.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5cd034aa255491_73950512',
+  'unifunc' => 'content_5cd2e6fc7875f8_66847821',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'aafef7ef0a69167538de306443ef4ab9d09ddfbd' => 
     array (
       0 => 'E:\\VM\\OSPanel\\domains\\MVC\\application\\views\\messagesView.tpl',
-      1 => 1557148809,
+      1 => 1557325563,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5cd034aa255491_73950512 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5cd2e6fc7875f8_66847821 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
 <html>
 <head>
@@ -103,8 +103,6 @@ function content_5cd034aa255491_73950512 (Smarty_Internal_Template $_smarty_tpl)
 </p>
     </div>
     <div class="footer">
-        <?php echo $_smarty_tpl->tpl_vars['footer']->value;?>
-
         06.03.2019
     </div>
 

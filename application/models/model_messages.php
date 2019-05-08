@@ -24,36 +24,51 @@ class Model_messages extends Model
             <a href="logout">Выйти</a>
             ';
 
-        $dialogs=$this->mysqli->query(
-            "SELECT dialogs.id_dialog FROM dialogs WHERE (id_user1= {$_SESSION['id']} OR id_user2 = {$_SESSION['id']})");
-        for ($res=[]; $row=$dialogs->fetch_array(MYSQLI_ASSOC); $res[]=$row);
+        $id=$_SESSION['id'];
 
-        $str='<table>';
+        $dialogs=$this->mysqli->query( "SELECT * FROM `dialogs` WHERE `id_user1`='$id' OR `id_user2`='$id'");
+        for ($res = []; $row = $dialogs->fetch_array(MYSQLI_ASSOC); $res[] = $row) ;
 
-        foreach ($res as $val) {
-            $dialog=$this->mysqli->query("SELECT * FROM dialogs WHERE id_dialog='{$val['id_dialog']}'"); //выбираем диалог
-            $dialog=$dialog->fetch_row();
+        if (!empty($res)) {
+            $str = '<table>';
 
-            if ($dialog[1]==$_SESSION['id']) //если сессия совпадает с ИД , то выбираем имя собеседника для хидера
-            {
-                $opponent=$this->mysqli->query("SELECT users.login FROM users WHERE id='{$dialog[2]}'");
-                $opponent=$opponent->fetch_row();
-            }else{
-                $opponent=$this->mysqli->query("SELECT users.login FROM users WHERE id='{$dialog[1]}'");
-                $opponent=$opponent->fetch_row();
+            foreach ($res as $val) {
+                if ($val['id_user1'] == $_SESSION['id']) //если сессия совпадает с ИД , то выбираем имя собеседника
+                {
+                    $opponent = $this->mysqli->query("SELECT users.login,users.id FROM users WHERE id='{$val['id_user2']}'");
+                    $opponent = $opponent->fetch_array(MYSQLI_ASSOC);
+
+                } else {
+                    $opponent = $this->mysqli->query("SELECT users.login,users.id FROM users WHERE id='{$val['id_user1']}'");
+                    $opponent = $opponent->fetch_array(MYSQLI_ASSOC);
+                }
+
+                $count = $this->mysqli->query
+                ("SELECT COUNT(*) AS count FROM messages WHERE id_dialog='{$val['id_dialog']}' AND status=1 AND id_sender='{$opponent['id']}'");
+                $count = $count->fetch_row();
+
+                if ($count[0] != 0) {
+                    $count = ' Не прочитано: ' . $count[0];
+                } else {
+                    $count = '';
+                }
+
+                $trTable = 'Диалог с ' . $opponent['login'] . $count;
+
+                $str .= "<tr><td id={$val['id_dialog']}>$trTable</td></tr>";
             }
 
-            $opponent='Диалог с '. $opponent[0];
+            $str .= '</table><p>';
 
-            $str.="<tr><td id='$dialog[0]'>$opponent</td></tr>";
-        }
-
-        $str.='</table><p>';
-
-        $str.=$this->showFormMessage();
+            $str .= $this->showFormMessage();
 
 
-            return ['sidebar'=>$sidebar,'content'=>$str, 'header'=>$header];
+            return ['sidebar' => $sidebar, 'content' => $str, 'header' => $header];
+             }
+        else{
+             return ['sidebar' => $sidebar, 'content' => 'У вас нет диалогов, отправьте сообщения чтобы начать общаться.
+             <br>Сообщения можно отправить из страницы профиля пользователя.', 'header' => $header];
+         }
     } //выводит диалоги и форму отправки сообщений
 
     public function getMessageJson ()
@@ -79,6 +94,7 @@ class Model_messages extends Model
 
         $header='Диалог с '. $opponent[0];
 
+        $this->mysqli->query("UPDATE messages SET status=0 WHERE id_dialog={$_POST['idDialog']} AND id_sender='$dialogOpponent'");
         $result=$this->mysqli->query("SELECT * FROM messages WHERE id_dialog={$_POST['idDialog']}"); //выбираем все ссобщения из диалога
         for ($res=[]; $row=$result->fetch_array(MYSQLI_ASSOC); $res[]=$row);
 
@@ -102,6 +118,7 @@ class Model_messages extends Model
 
     public function showFormMessage()
     {
+        $str='';
         $form= new Form();
         $str .= $form->open(['method' => 'POST', 'id'=>'ajaxForm', 'name'=>'form']);
         $str .= 'Сообщение<br>';
@@ -134,8 +151,7 @@ class Model_messages extends Model
 
         $dialog=$this->mysqli->query(
             "SELECT dialogs.id_dialog FROM dialogs WHERE ((id_user1= {$_SESSION['id']} OR id_user1= {$_POST['id']}) AND (id_user2= {$_SESSION['id']} OR id_user1= {$_POST['id']}))");
-        $dialogId=$dialog->fetch_row(); //$dialog[0]-id_dialog
-        if (is_null($dialogId))
+        if (is_null($dialog->lengths))
         {
             $this->mysqli->query("INSERT INTO `dialogs`(`id_user1`, `id_user2`) VALUES ('{$_SESSION['id']}','{$_POST['id']}')");
         }

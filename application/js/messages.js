@@ -14,7 +14,7 @@ $( document ).ready(function() {
         form.show('slow');
         load(id);
         setInterval(loadHelp,100);
-    });
+    }); //прячет и показывает форму отправки сообщения
 
     function loadHelp() {
         load(id);
@@ -29,7 +29,7 @@ $( document ).ready(function() {
             success: function (data)
             { appendMessages(data);},
         })
-    }
+    } //загружает сообщения
 
     function appendMessages(data) {
         table.empty();
@@ -53,7 +53,7 @@ $( document ).ready(function() {
                 }
             }
         });
-    }
+    } //вставляет их в таблицу
 
      form.submit(function( event ) {
         event.preventDefault();
@@ -65,7 +65,7 @@ $( document ).ready(function() {
             type: "POST",
         })
         form[0].reset();
-    });
+    }); //отправляет сообщения
 
 })
 

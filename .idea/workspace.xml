@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e2897d11-248d-40d8-88d0-0ee72138ed0c" name="Default Changelist" comment="" />
+    <list default="true" id="e2897d11-248d-40d8-88d0-0ee72138ed0c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$" beforeDir="false" afterPath="$PROJECT_DIR$" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,7 +17,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/js/messages.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
+            <state relative-caret-position="238">
               <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
             </state>
           </provider>
@@ -32,18 +36,9 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/models/model_messages.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
+            <state relative-caret-position="527">
               <caret line="124" column="69" selection-start-line="124" selection-start-column="69" selection-end-line="124" selection-end-column="69" />
               <folding>
                 <element signature="n#get_data#0;n#Model_messages#0;n#!!top" />
@@ -56,7 +51,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/controller_messages.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
+            <state relative-caret-position="544">
               <caret line="37" selection-start-line="37" selection-end-line="37" />
             </state>
           </provider>
@@ -73,7 +68,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -171,37 +166,25 @@
         <subPane>
           <expand>
             <path>
-              <item name="MVC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MVC" type="462c0819:PsiDirectoryNode" />
+              <item name="socialnetwork" type="b2602c69:ProjectViewProjectNode" />
+              <item name="socialnetwork" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="MVC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MVC" type="462c0819:PsiDirectoryNode" />
+              <item name="socialnetwork" type="b2602c69:ProjectViewProjectNode" />
+              <item name="socialnetwork" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="MVC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MVC" type="462c0819:PsiDirectoryNode" />
+              <item name="socialnetwork" type="b2602c69:ProjectViewProjectNode" />
+              <item name="socialnetwork" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="MVC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MVC" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MVC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MVC" type="462c0819:PsiDirectoryNode" />
+              <item name="socialnetwork" type="b2602c69:ProjectViewProjectNode" />
+              <item name="socialnetwork" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MVC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MVC" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -214,7 +197,7 @@
     <property name="Constants" value="false" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$APPLICATION_HOME_DIR$/lib/jQuery.js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../MVC" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
@@ -279,11 +262,13 @@
       <workItem from="1556735592526" duration="19000" />
       <workItem from="1556965146415" duration="6827000" />
       <workItem from="1557135836725" duration="15161000" />
+      <workItem from="1557154755284" duration="9000" />
+      <workItem from="1557317517052" duration="81000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="144099000" />
+    <option name="totallyTimeSpent" value="144189000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -297,7 +282,7 @@
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1320" height="784" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23650794" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24444444" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -306,7 +291,7 @@
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49920633" weight="0.452454" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.23006135" />
+      <window_info anchor="bottom" id="TODO" order="6" visible="true" weight="0.23006135" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3297546" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
@@ -331,13 +316,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/models/model_main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="28" column="56" lean-forward="true" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/models/load.php" />
     <entry file="file://$APPLICATION_HOME_DIR$/lib/jQuery.js" />
     <entry file="file://$PROJECT_DIR$/../shoutbox-php-jquery/vendor/composer/autoload_real.php" />
@@ -453,90 +431,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../libs/bootstrap.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../libs/Autoloader.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="83" selection-start-line="83" selection-end-line="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../libs/sysplugins/smarty_internal_data.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../libs/sysplugins/smarty_internal_extension_handler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../libs/sysplugins/smarty_internal_templatebase.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../libs/sysplugins/smarty_internal_template.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../libs/sysplugins/smarty_resource.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../libs/sysplugins/smarty_variable.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../libs/sysplugins/smarty_template_source.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../libs/sysplugins/smarty_template_resource_base.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../libs/sysplugins/smarty_internal_resource_file.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../libs/Smarty.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="109" selection-start-line="109" selection-end-line="109" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../libs/bootstrap.php" />
+    <entry file="file://$PROJECT_DIR$/../libs/Autoloader.php" />
+    <entry file="file://$PROJECT_DIR$/../libs/sysplugins/smarty_internal_data.php" />
+    <entry file="file://$PROJECT_DIR$/../libs/sysplugins/smarty_internal_extension_handler.php" />
+    <entry file="file://$PROJECT_DIR$/../libs/sysplugins/smarty_internal_templatebase.php" />
+    <entry file="file://$PROJECT_DIR$/../libs/sysplugins/smarty_internal_template.php" />
+    <entry file="file://$PROJECT_DIR$/../libs/sysplugins/smarty_resource.php" />
+    <entry file="file://$PROJECT_DIR$/../libs/sysplugins/smarty_variable.php" />
+    <entry file="file://$PROJECT_DIR$/../libs/sysplugins/smarty_template_source.php" />
+    <entry file="file://$PROJECT_DIR$/../libs/sysplugins/smarty_template_resource_base.php" />
+    <entry file="file://$PROJECT_DIR$/../libs/sysplugins/smarty_internal_resource_file.php" />
+    <entry file="file://$PROJECT_DIR$/../libs/Smarty.class.php" />
     <entry file="file://$PROJECT_DIR$/application/classes/UserSoc.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -573,13 +479,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/controller_messages.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/core/route.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="103">
@@ -594,24 +493,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/model_messages.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="124" column="69" selection-start-line="124" selection-start-column="69" selection-end-line="124" selection-end-column="69" />
-          <folding>
-            <element signature="n#get_data#0;n#Model_messages#0;n#!!top" />
-            <element signature="n#getMessageJson#0;n#Model_messages#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/authView.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-969">
@@ -621,10 +502,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/js/messages.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
+        <state relative-caret-position="238">
           <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/model_messages.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="124" column="69" selection-start-line="124" selection-start-column="69" selection-end-line="124" selection-end-column="69" />
+          <folding>
+            <element signature="n#get_data#0;n#Model_messages#0;n#!!top" />
+            <element signature="n#getMessageJson#0;n#Model_messages#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/controller_messages.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/compile/47efa6ee7cb1ebb578948906adf3e0b41569d32e_0.file.registerView.tpl.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/application/models/model_auth.php">
       <provider selected="true" editor-type-id="text-editor">

@@ -77,7 +77,6 @@
         <p>{$content}</p>
     </div>
     <div class="footer">
-        {$footer}
         06.03.2019
     </div>
 
