@@ -1,0 +1,47 @@
+a {
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 5px;
+    padding: 5px 5px;
+    font-size: 10px;
+    font-family: sans-serif;
+    color: blue;
+    border-radius: 25px;
+    border: 1px solid blue;
+}
+
+a:hover{
+    background: #b6cbed;
+}
+
+table{
+    border: 1px solid blue;
+    border-radius: 2px;
+    color: blue;
+    font-family: sans-serif;
+    border-collapse: collapse; /* Убираем двойные линии между ячейками */
+}
+
+td{
+    border: 1px solid blue;
+    border-radius: 2px;
+    padding: 3px; /* Поля вокруг содержимого таблицы */
+}
+
+td:hover{
+    background: #b6cbed;
+    cursor: pointer;
+}
+
+.oponent
+{
+    color: black;
+    background: white;
+    text-align: right;
+}
+.user
+{
+    color: black;
+    background: #E8E6D1;
+    text-align: left;
+}

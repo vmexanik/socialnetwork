@@ -41,7 +41,8 @@ class Model_main extends Model
                 'footer'=>'','header'=>$header];
         }
         else{
-            return ['content'=>'Тестовая заготовка под соцсеть написанная с помощью паттенрна MVC. Tолько для тренировки PHP',
+            return ['content'=>'Тестовая заготовка под соцсеть написанная с помощью паттенрна MVC. Tолько для тренировки PHP
+<p><p><p><p><p><p>',
                 'sidebar'=>' <a href="/">Главная</a><br>
                             <a href=auth>Войти</a><br>
                             <a href=register>Зарегистрироваться</a>',

@@ -33,6 +33,7 @@
             padding: 10px; /* Отступы внутри правого блока */
             background: #fff; /* Цвет фона правого блока */
             border-radius: 0px;
+            min-height: 100px;
         }
         .footer {
             background: #8fa09b; /* Цвет фона нижнего блока-подвала */

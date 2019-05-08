@@ -19,7 +19,7 @@ class UserSoc
     public function __toString()
     {
         $str="
-			<a href='/?id={$this->id}'>
+			<a href='/?id={$this->id}' class='allUser'>
 			<img src=\"/images/avatar.png\" align=\"bottom\" width=\"75\" height=\"75\"><br>
 			Ид:{$this->id}<br>
 			Логин:{$this->login}<br>

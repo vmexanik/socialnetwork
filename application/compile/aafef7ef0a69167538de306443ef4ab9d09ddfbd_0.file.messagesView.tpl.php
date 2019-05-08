@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-05-08 17:26:04
+/* Smarty version 3.1.33, created on 2019-05-08 21:38:31
   from 'E:\VM\OSPanel\domains\MVC\application\views\messagesView.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5cd2e6fc7875f8_66847821',
+  'unifunc' => 'content_5cd32227a19104_84416658',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'aafef7ef0a69167538de306443ef4ab9d09ddfbd' => 
     array (
       0 => 'E:\\VM\\OSPanel\\domains\\MVC\\application\\views\\messagesView.tpl',
-      1 => 1557325563,
+      1 => 1557340711,
       2 => 'file',
     ),
   ),
@@ -20,10 +20,11 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5cd2e6fc7875f8_66847821 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5cd32227a19104_84416658 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
 <html>
 <head>
+    <link href="/assets/css/messages.css" rel="stylesheet">
     <title>ВТренировке</title>
     <style type="text/css">
         body {
@@ -56,6 +57,7 @@ function content_5cd2e6fc7875f8_66847821 (Smarty_Internal_Template $_smarty_tpl)
             padding: 10px; /* Отступы внутри правого блока */
             background: #fff; /* Цвет фона правого блока */
             border-radius: 0px;
+            min-height: 120px;
         }
         .footer {
             background: #8fa09b; /* Цвет фона нижнего блока-подвала */
@@ -73,16 +75,6 @@ function content_5cd2e6fc7875f8_66847821 (Smarty_Internal_Template $_smarty_tpl)
             width: 80%;
             padding: 3px; /* Поля вокруг содержимого таблицы */
             border: 1px solid black; /* Параметры рамки */
-        }
-        td.oponent
-        {
-            background: white;
-            text-align: right;
-        }
-        td.user
-        {
-            background: #E8E6D1;
-            text-align: left;
         }
 
 

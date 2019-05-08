@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-04-24 13:06:48
+/* Smarty version 3.1.33, created on 2019-05-08 21:13:49
   from 'E:\VM\OSPanel\domains\MVC\application\views\authView.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5cc03538809431_80747213',
+  'unifunc' => 'content_5cd31c5d8702c9_39416647',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b78b25e0b14686389bb98886b18e39fd1f806bf1' => 
     array (
       0 => 'E:\\VM\\OSPanel\\domains\\MVC\\application\\views\\authView.tpl',
-      1 => 1556033242,
+      1 => 1557339227,
       2 => 'file',
     ),
   ),
@@ -20,10 +20,11 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5cc03538809431_80747213 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5cd31c5d8702c9_39416647 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
+    <link href="/assets/css/auth.css" rel="stylesheet">
     <title>ВТренировке</title>
     <style type="text/css">
         body {
@@ -56,6 +57,7 @@ function content_5cc03538809431_80747213 (Smarty_Internal_Template $_smarty_tpl)
             padding: 10px; /* Отступы внутри правого блока */
             background: #fff; /* Цвет фона правого блока */
             border-radius: 0px;
+            min-height: 100px;
         }
         .footer {
             background: #8fa09b; /* Цвет фона нижнего блока-подвала */

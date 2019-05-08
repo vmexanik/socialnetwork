@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-04-24 12:58:13
+/* Smarty version 3.1.33, created on 2019-05-08 21:16:10
   from 'E:\VM\OSPanel\domains\MVC\application\views\mainView.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5cc03335e453a4_46229565',
+  'unifunc' => 'content_5cd31cea2906f9_36999594',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '27462141163a1d3e00443719b73e1ad7e76e4a24' => 
     array (
       0 => 'E:\\VM\\OSPanel\\domains\\MVC\\application\\views\\mainView.tpl',
-      1 => 1556026603,
+      1 => 1557339365,
       2 => 'file',
     ),
   ),
@@ -20,10 +20,11 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5cc03335e453a4_46229565 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5cd31cea2906f9_36999594 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
+    <link href="/assets/css/main.css" rel="stylesheet">
     <title>ВТренировке</title>
     <style type="text/css">
         body {
@@ -56,6 +57,7 @@ function content_5cc03335e453a4_46229565 (Smarty_Internal_Template $_smarty_tpl)
             padding: 10px; /* Отступы внутри правого блока */
             background: #fff; /* Цвет фона правого блока */
             border-radius: 0px;
+            min-height: 100px;
         }
         .footer {
             background: #8fa09b; /* Цвет фона нижнего блока-подвала */
@@ -64,14 +66,6 @@ function content_5cc03335e453a4_46229565 (Smarty_Internal_Template $_smarty_tpl)
             clear: left; /* Отменяем действие float */
             text-align: center;
             border-radius: 0px;
-        }
-        TABLE {
-            text-align: center;
-            border-collapse: collapse; /* Убираем двойные линии между ячейками */
-        }
-        TD {
-            padding: 3px; /* Поля вокруг содержимого таблицы */
-            border: 1px solid black; /* Параметры рамки */
         }
 
     </style>

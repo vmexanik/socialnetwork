@@ -1,6 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
+    <link href="/assets/css/main.css" rel="stylesheet">
     <title>ВТренировке</title>
     <style type="text/css">
         body {
@@ -33,6 +34,7 @@
             padding: 10px; /* Отступы внутри правого блока */
             background: #fff; /* Цвет фона правого блока */
             border-radius: 0px;
+            min-height: 100px;
         }
         .footer {
             background: #8fa09b; /* Цвет фона нижнего блока-подвала */
@@ -41,14 +43,6 @@
             clear: left; /* Отменяем действие float */
             text-align: center;
             border-radius: 0px;
-        }
-        TABLE {
-            text-align: center;
-            border-collapse: collapse; /* Убираем двойные линии между ячейками */
-        }
-        TD {
-            padding: 3px; /* Поля вокруг содержимого таблицы */
-            border: 1px solid black; /* Параметры рамки */
         }
 
     </style>

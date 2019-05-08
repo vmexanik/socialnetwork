@@ -1,6 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
 <html>
 <head>
+    <link href="/assets/css/messages.css" rel="stylesheet">
     <title>ВТренировке</title>
     <style type="text/css">
         body {
@@ -33,6 +34,7 @@
             padding: 10px; /* Отступы внутри правого блока */
             background: #fff; /* Цвет фона правого блока */
             border-radius: 0px;
+            min-height: 120px;
         }
         .footer {
             background: #8fa09b; /* Цвет фона нижнего блока-подвала */
@@ -50,16 +52,6 @@
             width: 80%;
             padding: 3px; /* Поля вокруг содержимого таблицы */
             border: 1px solid black; /* Параметры рамки */
-        }
-        td.oponent
-        {
-            background: white;
-            text-align: right;
-        }
-        td.user
-        {
-            background: #E8E6D1;
-            text-align: left;
         }
 
 

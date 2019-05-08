@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-05-04 13:54:46
+/* Smarty version 3.1.33, created on 2019-05-08 21:22:57
   from 'E:\VM\OSPanel\domains\MVC\application\views\profileView.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5ccd6f76b048d1_49379894',
+  'unifunc' => 'content_5cd31e81a69730_66387848',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '79fe8f42d0b9faa6a1ac7fe8fc985a42742a5d30' => 
     array (
       0 => 'E:\\VM\\OSPanel\\domains\\MVC\\application\\views\\profileView.tpl',
-      1 => 1556967286,
+      1 => 1557339776,
       2 => 'file',
     ),
   ),
@@ -20,10 +20,11 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5ccd6f76b048d1_49379894 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5cd31e81a69730_66387848 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
+    <link href="/assets/css/profile.css" rel="stylesheet">
     <title>ВТренировке</title>
     <style type="text/css">
         body {
@@ -56,6 +57,7 @@ function content_5ccd6f76b048d1_49379894 (Smarty_Internal_Template $_smarty_tpl)
             padding: 10px; /* Отступы внутри правого блока */
             background: #fff; /* Цвет фона правого блока */
             border-radius: 0px;
+            min-height: 100px;
         }
         .footer {
             background: #8fa09b; /* Цвет фона нижнего блока-подвала */

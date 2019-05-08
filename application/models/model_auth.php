@@ -36,12 +36,11 @@ class Model_auth extends Model
     {
         $str = '';
         $form = new Form;
-        $str .= $form->open(['method' => 'POST']);
-        $str .= 'Логин<br>';
-        $str .= $form->input(['type' => 'text', 'name' => 'login']);
-        $str .= '<p>Пароль<br>';
-        $str .= $form->input(['type' => 'password', 'name' => 'password']);
-        $str .= '<p>';
+        $str .= $form->open(['method' => 'POST', 'class'=>'box']);
+        $str .= $form->input(['type' => 'text', 'name' => 'login', 'placeholder'=>'Логин']);
+        $str.='<br />';
+        $str .= $form->input(['type' => 'password', 'name' => 'password', 'placeholder'=>'Пароль']);
+        $str.='<br />';
         $str .= $form->input(['type' => 'submit', 'value' => 'Войти !']);
         $str .= $form->close();
         return ['header' => 'Добро пожаловать!!!',

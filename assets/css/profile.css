@@ -1,0 +1,24 @@
+a {
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 5px;
+    padding: 5px 5px;
+    font-size: 10px;
+    font-family: sans-serif;
+    color: blue;
+    border-radius: 25px;
+    border: 1px solid blue;
+}
+
+a:hover{
+    background: #b6cbed;
+}
+
+table{
+    text-align: center;
+    border-collapse: collapse; /* Убираем двойные линии между ячейками */
+}
+
+td{
+    padding: 3px; /* Поля вокруг содержимого таблицы */
+}
