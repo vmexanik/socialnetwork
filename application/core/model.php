@@ -42,9 +42,9 @@ class Model
                 {
                     $i=0;
                     $str.= '</tr><tr>';
-                    $str.="<td>{$val}</td>";
+                    $str.="<td id='".$val->id."'>{$val}</td>";
                 }else{
-                    $str.= "<td>{$val}</td>";
+                    $str.= "<td id='".$val->id."'>{$val}</td>";
                 }
                 $i++;
             }

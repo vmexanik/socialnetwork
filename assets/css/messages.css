@@ -15,16 +15,15 @@ a:hover{
 }
 
 table{
+    border-radius: 5px;
+    border-spacing: 5px;
+    text-align: left;
     border: 1px solid blue;
-    border-radius: 2px;
-    color: blue;
-    font-family: sans-serif;
-    border-collapse: collapse; /* Убираем двойные линии между ячейками */
 }
 
 td{
+    border-radius: 5px;
     border: 1px solid blue;
-    border-radius: 2px;
     padding: 3px; /* Поля вокруг содержимого таблицы */
 }
 

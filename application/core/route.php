@@ -22,34 +22,16 @@ class Route
 			$controller_name = $routes[1];
 		}
 
-        if (preg_match('#^\?id=(\d{1,3})$#',$controller_name,$matches))
-            //если был замечен ид то уходим на страницу показа профиля
-        {
-            $_POST['id']= $matches[1];
-            $_GET['id']=null;
-            //header('Location:/profile');
-            $controller_name='Profile';
-        }
-
 		// получаем имя экшена
 		if ( !empty($routes[2]) )
 		{
 			$action_name = $routes[2];
 		}
 
-
-
-
 		// добавляем префиксы
 		$model_name = 'Model_'.$controller_name;
 		$controller_name = 'Controller_'.$controller_name;
 		$action_name = 'action_'.$action_name;
-
-		/*
-		echo "Model: $model_name <br>";
-		echo "Controller: $controller_name <br>";
-		echo "Action: $action_name <br>";
-		*/
 
 		// подцепляем файл с классом модели (файла модели может и не быть)
 

@@ -66,4 +66,7 @@
     </div>
 </div>
 </body>
+<script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+<script src="./application/js/redirect.js"></script>
+<script src="./application/js/profileShow.js"></script>
 </html>

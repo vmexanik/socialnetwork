@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-05-08 21:16:10
+/* Smarty version 3.1.33, created on 2019-05-09 16:48:06
   from 'E:\VM\OSPanel\domains\MVC\application\views\mainView.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5cd31cea2906f9_36999594',
+  'unifunc' => 'content_5cd42f9642a5e0_09101348',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '27462141163a1d3e00443719b73e1ad7e76e4a24' => 
     array (
       0 => 'E:\\VM\\OSPanel\\domains\\MVC\\application\\views\\mainView.tpl',
-      1 => 1557339365,
+      1 => 1557409678,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5cd31cea2906f9_36999594 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5cd42f9642a5e0_09101348 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
@@ -93,5 +93,14 @@ function content_5cd31cea2906f9_36999594 (Smarty_Internal_Template $_smarty_tpl)
     </div>
 </div>
 </body>
+<?php echo '<script'; ?>
+ src="https://code.jquery.com/jquery-3.4.0.min.js"><?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+ src="./application/js/redirect.js"><?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+ src="./application/js/profileShow.js"><?php echo '</script'; ?>
+>
 </html><?php }
 }

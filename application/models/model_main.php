@@ -29,7 +29,7 @@ class Model_main extends Model
             $header='Вы вошли как: '.$_SESSION['login'];
             $sidebar='
             <a href="/">Главная</a><br>
-            <a href="/?id='.$_SESSION['id'].'">Мой профиль</a><br>
+            <a href="id='.$_SESSION['id'].'" class="myProfile" id="'.$_SESSION['id'].'">Мой профиль</a><br>
             <a href="messages">Сообщения</a><br>
             <a href="logout">Выйти</a>
             ';

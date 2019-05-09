@@ -25,10 +25,17 @@ a:hover{
 }
 
 table{
+    border-radius: 5px;
+    border-spacing: 2px;
     text-align: center;
-    border-collapse: collapse; /* Убираем двойные линии между ячейками */
 }
 
 td{
+    border-radius: 5px;
+    border: 1px solid black;
     padding: 3px; /* Поля вокруг содержимого таблицы */
+}
+
+td:hover{
+    background: #b6cbed;
 }
